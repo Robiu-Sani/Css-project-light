@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+     
+    <head>
+	     <meta charset="UTF-8">
+	     <title>light project</title>
+	     <link rel="stylesheet" href="style.css">
+    </head>
+	
+    <body>
+	    <div class="mainContant">
+         <div class="logo">
+		     <image id="logo1" src="img/menu.png">
+		     <image id="logo2" src="img/logo.png">
+		 </div>
+		 <div class="img">
+		      <image id="img1" src="img/lamp.png">
+		      <image class="img2" id="img2" src="img/light.png">
+		 </div>
+		 <div class="menu">
+		     <ul>
+			     <li><a href="#">latest</a></li>
+			     <li><a href="#">medium</a></li>
+			     <li><a href="#">normal</a></li>
+			     <li><a href="#">contact</a></li>
+			     <li><a href="#">with us</a></li>
+			 </ul>
+			 <div id="btn" class="button" onclick="toggleBtn()">
+			     <button class="smallButton" id="smallButton"></button>
+			 </div>
+		 </div>
+		 <div class="contant">
+		     <div id="nameContant">
+			     <h1>latest<br/>in lighting</h1>
+				 <p>This is the first lamp from our company. We are making a huge collection of modern lamps in all callection from hurry use to office use.</p>
+			 </div>
+			 <button id="contact"> contact us </button>
+		 </div>
+		 </div>
+		 <script>
+		      var x= document.getElementById("smallButton");
+		      var y= document.getElementById("img2");
+		      var z= document.getElementById("btn");
+			  function toggleBtn(){
+			        z.classList.toggle("active");
+					x.classList.toggle("smbtn");
+					y.classList.toggle("on");
+			  }			  
+		 </script>
+    </body>
+	
+</html> 
